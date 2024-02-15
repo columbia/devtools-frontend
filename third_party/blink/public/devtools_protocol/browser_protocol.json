@@ -20906,6 +20906,21 @@
                     ]
                 },
                 {
+                    "id": "AttributionReportingEpoch",
+                    "experimental": true,
+                    "type": "object",
+                    "properties": [
+                        {
+                            "name": "epoch_start",
+                            "type": "UnsignedInt64AsBase10"
+                        },
+                        {
+                            "name": "epoch_end",
+                            "type": "UnsignedInt64AsBase10"
+                        }
+                    ]
+                },
+                {
                     "id": "AttributionReportingAggregatableDedupKey",
                     "experimental": true,
                     "type": "object",
@@ -20980,6 +20995,19 @@
                             "name": "triggerContextId",
                             "optional": true,
                             "type": "string"
+                        },
+                        {
+                            "name": "pamEpsilon",
+                            "optional": true,
+                            "type": "number"
+                        },
+                        {
+                            "name": "epochs",
+                            "optional": false,
+                            "type": "array",
+                            "items": {
+                                "$ref": "AttributionReportingEpoch"
+                            }
                         }
                     ]
                 },

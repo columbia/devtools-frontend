@@ -13958,6 +13958,11 @@ export namespace Storage {
     filters: AttributionReportingFilterPair;
   }
 
+  export interface AttributionReportingEpoch {
+    epoch_start: UnsignedInt64AsBase10;
+    epoch_end: UnsignedInt64AsBase10;
+  }
+
   export interface AttributionReportingAggregatableTriggerData {
     keyPiece: UnsignedInt128AsBase16;
     sourceKeys: string[];
@@ -13980,6 +13985,8 @@ export namespace Storage {
     aggregationCoordinatorOrigin?: string;
     sourceRegistrationTimeConfig: AttributionReportingSourceRegistrationTimeConfig;
     triggerContextId?: string;
+    pamEpsilon?: number;
+    epochs: AttributionReportingEpoch[];
   }
 
   export const enum AttributionReportingEventLevelResult {
