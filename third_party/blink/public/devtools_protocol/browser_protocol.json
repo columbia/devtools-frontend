@@ -21008,6 +21008,19 @@
                             "items": {
                                 "$ref": "AttributionReportingEpoch"
                             }
+                        },
+                        {
+                            "name": "sourceIdCandidates",
+                            "optional": false,
+                            "type": "array",
+                            "items": {
+                                "$ref": "UnsignedInt64AsBase10"
+                            }
+                        },
+                        {
+                            "name": "attributionLogic",
+                            "optional": false,
+                            "type": "string"
                         }
                     ]
                 },

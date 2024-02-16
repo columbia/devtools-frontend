@@ -13987,6 +13987,8 @@ export namespace Storage {
     triggerContextId?: string;
     pamEpsilon?: number;
     epochs: AttributionReportingEpoch[];
+    sourceIdCandidates: string[];
+    attributionLogic: string;
   }
 
   export const enum AttributionReportingEventLevelResult {
