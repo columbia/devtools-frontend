@@ -10174,8 +10174,8 @@ experimental domain Storage
 
   experimental type AttributionReportingEpoch extends object
     properties
-      UnsignedInt64AsBase10 epoch_start
-      UnsignedInt64AsBase10 epoch_end
+      UnsignedInt64AsBase10 epochStart
+      UnsignedInt64AsBase10 epochEnd
 
   experimental type AttributionReportingAggregatableTriggerData extends object
     properties

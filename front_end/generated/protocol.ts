@@ -13959,8 +13959,8 @@ export namespace Storage {
   }
 
   export interface AttributionReportingEpoch {
-    epoch_start: UnsignedInt64AsBase10;
-    epoch_end: UnsignedInt64AsBase10;
+    epochStart: UnsignedInt64AsBase10;
+    epochEnd: UnsignedInt64AsBase10;
   }
 
   export interface AttributionReportingAggregatableTriggerData {

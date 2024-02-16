@@ -20911,11 +20911,11 @@
                     "type": "object",
                     "properties": [
                         {
-                            "name": "epoch_start",
+                            "name": "epochStart",
                             "type": "UnsignedInt64AsBase10"
                         },
                         {
-                            "name": "epoch_end",
+                            "name": "epochEnd",
                             "type": "UnsignedInt64AsBase10"
                         }
                     ]
