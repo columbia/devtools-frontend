@@ -20812,6 +20812,10 @@
                         {
                             "name": "triggerDataMatching",
                             "$ref": "AttributionReportingTriggerDataMatching"
+                        },
+                        {
+                            "name": "epoch",
+                            "$ref": "UnsignedInt64AsBase10"
                         }
                     ]
                 },
