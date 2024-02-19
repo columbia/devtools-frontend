@@ -13960,7 +13960,7 @@ export namespace Storage {
     filters: AttributionReportingFilterPair;
   }
 
-  export interface AttributionReportingEpoch {
+  export interface AttributionReportingAttributionWindow {
     epochStart: UnsignedInt64AsBase10;
     epochEnd: UnsignedInt64AsBase10;
   }
@@ -13987,8 +13987,8 @@ export namespace Storage {
     aggregationCoordinatorOrigin?: string;
     sourceRegistrationTimeConfig: AttributionReportingSourceRegistrationTimeConfig;
     triggerContextId?: string;
-    pamEpsilon?: number;
-    epochs: AttributionReportingEpoch[];
+    globalEpsilon?: number;
+    attributionWindow: AttributionReportingAttributionWindow;
     sourceIdCandidates: string[];
     attributionLogic: string;
   }

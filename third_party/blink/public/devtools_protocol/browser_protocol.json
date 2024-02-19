@@ -20910,7 +20910,7 @@
                     ]
                 },
                 {
-                    "id": "AttributionReportingEpoch",
+                    "id": "AttributionReportingAttributionWindow",
                     "experimental": true,
                     "type": "object",
                     "properties": [
@@ -21001,17 +21001,14 @@
                             "type": "string"
                         },
                         {
-                            "name": "pamEpsilon",
+                            "name": "globalEpsilon",
                             "optional": true,
                             "type": "number"
                         },
                         {
-                            "name": "epochs",
+                            "name": "attributionWindow",
                             "optional": false,
-                            "type": "array",
-                            "items": {
-                                "$ref": "AttributionReportingEpoch"
-                            }
+                            "$ref": "AttributionReportingAttributionWindow"
                         },
                         {
                             "name": "sourceIdCandidates",
