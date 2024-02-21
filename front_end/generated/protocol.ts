@@ -13989,7 +13989,7 @@ export namespace Storage {
     triggerContextId?: string;
     globalEpsilon?: number;
     attributionWindow: AttributionReportingAttributionWindow;
-    sourceIdCandidates: string[];
+    aggregatableCapValues: AttributionReportingAggregatableValueEntry[];
     attributionLogic: string;
   }
 

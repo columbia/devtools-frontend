@@ -21011,11 +21011,10 @@
                             "$ref": "AttributionReportingAttributionWindow"
                         },
                         {
-                            "name": "sourceIdCandidates",
-                            "optional": false,
+                            "name": "aggregatableCapValues",
                             "type": "array",
                             "items": {
-                                "$ref": "UnsignedInt64AsBase10"
+                                "$ref": "AttributionReportingAggregatableValueEntry"
                             }
                         },
                         {
