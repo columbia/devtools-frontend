@@ -21021,6 +21021,11 @@
                             "name": "attributionLogic",
                             "optional": false,
                             "type": "string"
+                        },
+                        {
+                            "name": "partitioningLogic",
+                            "optional": false,
+                            "type": "string"
                         }
                     ]
                 },

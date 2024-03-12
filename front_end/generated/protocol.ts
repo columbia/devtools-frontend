@@ -13991,6 +13991,7 @@ export namespace Storage {
     attributionWindow: AttributionReportingAttributionWindow;
     aggregatableCapValues: AttributionReportingAggregatableValueEntry[];
     attributionLogic: string;
+    partitioningLogic: string;
   }
 
   export const enum AttributionReportingEventLevelResult {

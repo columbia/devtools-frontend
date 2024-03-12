@@ -10205,6 +10205,7 @@ experimental domain Storage
       AttributionReportingAttributionWindow attributionWindow
       array of AttributionReportingAggregatableValueEntry aggregatableCapValues
       string attributionLogic
+      string partitioningLogic
 
   experimental type AttributionReportingEventLevelResult extends string
     enum
