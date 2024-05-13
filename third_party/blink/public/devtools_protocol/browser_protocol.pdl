@@ -10164,6 +10164,7 @@ experimental domain Storage
       array of AttributionReportingAggregationKeysEntry aggregationKeys
       optional UnsignedInt64AsBase10 debugKey
       AttributionReportingTriggerDataMatching triggerDataMatching
+      UnsignedInt64AsBase10 epoch
 
   experimental type AttributionReportingSourceRegistrationResult extends string
     enum
@@ -10204,6 +10205,11 @@ experimental domain Storage
       optional UnsignedInt64AsBase10 dedupKey
       AttributionReportingFilterPair filters
 
+  experimental type AttributionReportingAttributionWindow extends object
+    properties
+      UnsignedInt64AsBase10 epochStart
+      UnsignedInt64AsBase10 epochEnd
+
   experimental type AttributionReportingAggregatableTriggerData extends object
     properties
       UnsignedInt128AsBase16 keyPiece
@@ -10227,6 +10233,11 @@ experimental domain Storage
       optional string aggregationCoordinatorOrigin
       AttributionReportingSourceRegistrationTimeConfig sourceRegistrationTimeConfig
       optional string triggerContextId
+      optional number globalEpsilon
+      AttributionReportingAttributionWindow attributionWindow
+      array of AttributionReportingAggregatableValueEntry aggregatableCapValues
+      string attributionLogic
+      string partitioningLogic
 
   experimental type AttributionReportingEventLevelResult extends string
     enum

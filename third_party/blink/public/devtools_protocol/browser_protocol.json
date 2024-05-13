@@ -20863,6 +20863,10 @@
                         {
                             "name": "triggerDataMatching",
                             "$ref": "AttributionReportingTriggerDataMatching"
+                        },
+                        {
+                            "name": "epoch",
+                            "$ref": "UnsignedInt64AsBase10"
                         }
                     ]
                 },
@@ -20957,6 +20961,21 @@
                     ]
                 },
                 {
+                    "id": "AttributionReportingAttributionWindow",
+                    "experimental": true,
+                    "type": "object",
+                    "properties": [
+                        {
+                            "name": "epochStart",
+                            "type": "UnsignedInt64AsBase10"
+                        },
+                        {
+                            "name": "epochEnd",
+                            "type": "UnsignedInt64AsBase10"
+                        }
+                    ]
+                },
+                {
                     "id": "AttributionReportingAggregatableDedupKey",
                     "experimental": true,
                     "type": "object",
@@ -21030,6 +21049,33 @@
                         {
                             "name": "triggerContextId",
                             "optional": true,
+                            "type": "string"
+                        },
+                        {
+                            "name": "globalEpsilon",
+                            "optional": true,
+                            "type": "number"
+                        },
+                        {
+                            "name": "attributionWindow",
+                            "optional": false,
+                            "$ref": "AttributionReportingAttributionWindow"
+                        },
+                        {
+                            "name": "aggregatableCapValues",
+                            "type": "array",
+                            "items": {
+                                "$ref": "AttributionReportingAggregatableValueEntry"
+                            }
+                        },
+                        {
+                            "name": "attributionLogic",
+                            "optional": false,
+                            "type": "string"
+                        },
+                        {
+                            "name": "partitioningLogic",
+                            "optional": false,
                             "type": "string"
                         }
                     ]
